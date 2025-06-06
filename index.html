@@ -9,19 +9,23 @@
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Samrat Parajuli's Portfolio - Student, Developer, Tech Enthusiast">
     <meta name="author" content="Samrat Parajuli">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <nav>
         <div class="nav-container">
-            <div class="nameS">
-                <a href="#home">
-                    <span>SAMRAT</span>
-                </a>
+            <div class="nav-logo">  
+                <span class="logo-bracket">&lt;</span>
+                <a href="#home"><span class="logo-text">SAMRAT</span></a>
+                <span class="logo-bracket">/&gt;</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -60,126 +64,198 @@
             <div class="home-container">
                 <div class="content">
                     <div class="text">
-                        <h1>Hi, I'm Samrat</h1>
-                        <h2>Student & Tech Enthusiast</h2>
-                        <p>Passionate about writing clean code and creating impactful
-                            solutions.</p>
-                        <p>Currently learning, building, and exploring tech that saves people
-                            time.</p>
-                    </div>
-                    <div class="hero-cta">
-                        <a href="#skills" class="button">See my Skills</a>
+                        <h1 class="home-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name">Samrat Parajuli</span>
+                            <span class="interest">Tech Enthusiast from Nepal</span>
+                        </h1>
+                        <p class="subtitle">
+                            <span class="typing-text">Student • Developer • Tech Explorer</span>
+                        </p>
+                        <div class="hbuttons">
+                            <a href="#about" class="btn btn-primary">
+                                <i class="fas fa-user"></i>
+                                About Me
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i>
+                                Get In Touch
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="image">
-                    <img src="Porfolio4.jpg" alt="Portrait" width="300" height="300">
+                <div class="himage">
+                    <div class="image-container">
+                        <div class="image-frame">
+                            <img src="Porfolio4.jpg" alt="Profile" class="profile-img">
+                        </div>
+                        <div class="image-glow"></div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="about" id="about">
             <div class="about-container">
-                <div class="about-image">
-                    <img src="Portfolio2.jpg" alt="Samrat Parajuli" width="400" height="400">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        About Me
+                    </h2>
+                    <div class="section-line"></div>
                 </div>
                 <div class="about-content">
-                    <h2 class="section-title">About <span>Me</span></h2>
                     <div class="about-text">
-                        <p class="about-highlight">Hello, my name is Samrat Parajuli, and I am a high school student
-                            based in Nepal with a growing passion for computer science and software development.</p>
+                        <p class="about-description">
+                            Hello, my name is Samrat Parajuli, and I am a high school student
+                            based in Nepal with a growing passion for computer science and software development. I have
+                            built a solid foundation in front-end web technologies,
+                            including HTML, CSS, and JavaScript, and I am continually expanding my skill set. I am also
+                            studying the C programming language and plan to explore networking in C as my next step.
+                            I approach learning with focus, dedication, and a deep curiosity.
+                        </p>
+                        <p class="about-description">
+                            My values are influenced by my devotion to Lord Krishna, which guides me to be mindful,
+                            purposeful, and consistent in both my personal and academic life. Whether I'm writing code
+                            or deepening my understanding of computing principles, I strive for clarity, efficiency,
+                            and continuous improvement. I am open to new opportunities for collaboration, mentorship,
+                            and meaningful connections in the field of technology.
+                        </p>
+                        <p class="about-description">
+                            Please feel free to reach out—I am always eager to learn and grow.
+                        </p>
 
-                        <p>I have built a solid foundation in front-end web technologies, including HTML, CSS, and
-                            JavaScript, and I am continually expanding my skill set. I am also studying the C
-                            programming language and plan to explore networking in C as my next step.</p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Based in Kathmandu, Nepal</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Computer Science Student</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <span>Web Development Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
 
-                        <p>I approach learning with focus, dedication, and a deep curiosity. My values are influenced by
-                            my devotion to Lord Krishna, which guides me to be mindful, purposeful, and consistent in
-                            both my personal and academic life.</p>
-
-                        <p>Whether I'm writing code or deepening my understanding of computing principles, I strive for
-                            clarity, efficiency, and continuous improvement.</p>
-
-                        <p class="abt-text">I am open to new opportunities for collaboration, mentorship, and meaningful
-                            connections in the field of technology. Please feel free to reach out—I am always eager to
-                            learn and grow.</p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">Months Learning</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Hours Coded</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="skills" id="skills">
-            <div class="bx">
-                <h1>Coding Languages</h1>
-            </div>
-            <div class="box1">
-                <div class="lang">
-                    <img src="HTML.png" alt="htmlLogo">
-                    <div class="skill">
-                        <span>HTML</span>
-                        <div class="proficiency">★★★☆☆</div>
-                    </div>
-                </div>
-                <div class="lang">
-                    <img src="cssLogo.png" alt="">
-                    <div class="skill">
-                        <span>CSS</span>
-                        <div class="proficiency">★★★☆☆</div>
-                    </div>
-                </div>
-                <div class="lang">
-                    <img src="jsLogo.png" alt="">
-                    <div class="skill">
-                        <span>JavaScript</span>
-                        <div class="proficiency">★★★☆☆</div>
-                    </div>
-                </div>
-                <div class="lang">
-                    <img src="C_logo.png" alt="" C logo>
-                    <div class="skill">
-                        <span>C</span>
-                        <div class="proficiency">★★★★☆</div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="otherSk">
-            <div class="bx">
-                <h1>Other Skills</h1>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="problem-solving.png" alt="Problem Solving Icon">
-                    <span>Problem Solving</span>
+        </div>
+        </div>
+        <div id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Skills & Technologies
+                    </h2>
+                    <div class="section-line"></div>
                 </div>
-                <div class="skill-card">
-                    <img src="communication.svg" alt="Communication Icon">
-                    <span>Communication</span>
-                </div>
-                <div class="skill-card">
-                    <img src="public-speaking.png" alt="Public Speaking Icon">
-                    <span>Public Speaking</span>
-                </div>
-                <div class="skill-card">
-                    <img src="vs-code.svg" alt="VS Code Icon">
-                    <span>VS Code</span>
-                </div>
-                <div class="skill-card">
-                    <img src="self-learning.png" alt="Self-Learning Icon">
-                    <span>Self-Learning</span>
-                </div>
-                <div class="skill-card">
-                    <img src="creativitysvg.svg" alt="Creativity Icon">
-                    <span>Creativity</span>
-                </div>
-                <div class="skill-card">
-                    <img src="time-management.svg" alt="Time Management Icon">
-                    <span>Time Management</span>
-                </div>
-                <div class="skill-card">
-                    <img src="attention.png" alt="Attention to Detail Icon">
-                    <span>Attention to Detail</span>
-                </div>
-                <div class="skill-card">
-                    <img src="curiosity.png" alt="Curiosity Icon">
-                    <span>Curiosity</span>
+                <div class="skills-content">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="category-title">Coding Languages</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <img src="HTML.png" alt="HTML" class="skill-icon-img">
+                                        <span class="skill-name">HTML</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-progress="60"></div>
+                                    </div>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <img src="css-logo.png" alt="CSS" class="skill-icon-img">
+                                        <span class="skill-name">CSS</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-progress="60"></div>
+                                    </div>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <img src="jsLogo.png" alt="JavaScript" class="skill-icon-img">
+                                        <span class="skill-name">JavaScript</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-progress="60"></div>
+                                    </div>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <img src="C_logo.png" alt="C" class="skill-icon-img">
+                                        <span class="skill-name">C</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" data-progress="80"></div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="category-title">Other Skills</h3>
+                            <div class="tools-grid">
+                                <div class="tool-item">
+                                    <img src="problem-solving.png" alt="Problem Solving" class="tool-icon-img">
+                                    <span>Problem Solving</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="communication.svg" alt="Communication" class="tool-icon-img">
+                                    <span>Communication</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="speaker.png" alt="Public Speaking" class="tool-icon-img">
+                                    <span>Public Speaking</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="vs-code.svg" alt="VS Code" class="tool-icon-img">
+                                    <span>VS Code</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="self-learning.png" alt="Self-Learning" class="tool-icon-img">
+                                    <span>Self-Learning</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="creativity.svg" alt="Creativity" class="tool-icon-img">
+                                    <span>Creativity</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="time-management.svg" alt="Time Management" class="tool-icon-img">
+                                    <span>Time Management</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="attention.png" alt="Attention to Detail" class="tool-icon-img">
+                                    <span>Attention to Detail</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="curiosity.png" alt="Curiosity" class="tool-icon-img">
+                                    <span>Curiosity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
