@@ -583,6 +583,14 @@ nav span {
     position: relative;
 }
 
+.progress-bar[data-progress="20"] {
+    animation: progressFill20 1.5s ease-out forwards;
+}
+
+.progress-bar[data-progress="40"] {
+    animation: progressFill40 1.5s ease-out forwards;
+}
+
 .progress-bar[data-progress="60"] {
     animation: progressFill60 1.5s ease-out forwards;
 }
@@ -594,6 +602,16 @@ nav span {
 @keyframes progressFill60 {
     from { width: 0%; }
     to { width: 60%; }
+}
+
+@keyframes progressFill20 {
+    from { width: 0%; }
+    to { width: 20%; }
+}
+
+@keyframes progressFill40 {
+    from { width: 0%; }
+    to { width: 40%; }
 }
 
 @keyframes progressFill80 {
